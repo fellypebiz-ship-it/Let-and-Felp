@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Galeria de Amor ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Nossa História de Amor</h1>
+            <p class="subtitle">Cada foto é um momento especial juntos</p>
+        </header>
+
+        <div class="message-section">
+            <div class="heart-container">
+                <div class="heart"></div>
+            </div>
+            <h2 class="love-message">Te adoro</h2>
+            <p class="love-description">Cada dia ao seu lado é um presente que agradeço ao universo</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery" id="photoGallery">
+                <!-- As fotos serão adicionadas aqui dinamicamente -->
+            </div>
+        </div>
+
+        <div class="upload-section">
+            <h3>Adicionar Nossas Fotos</h3>
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+                <div class="upload-content">
+                    <div class="upload-icon">📸</div>
+                    <p>Clique aqui para adicionar fotos</p>
+                    <p class="upload-hint">ou arraste as fotos para cá</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Feito com ❤️ para nós dois</p>
+        </footer>
+    </div>
+
+    <!-- Modal para visualizar as fotos -->
+    <div class="modal" id="photoModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <img id="modalImage" src="" alt="Foto">
+            <div class="modal-nav">
+                <button class="nav-btn" id="prevBtn">‹</button>
+                <button class="nav-btn" id="nextBtn">›</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
