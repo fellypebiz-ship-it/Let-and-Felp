@@ -10,6 +10,12 @@
 <body>
     <div class="container">
         <header class="header">
+            <div class="floating-hearts">
+                <div class="heart-float">❤️</div>
+                <div class="heart-float">💕</div>
+                <div class="heart-float">💖</div>
+                <div class="heart-float">💝</div>
+            </div>
             <h1 class="title">Nossa História de Amor</h1>
             <p class="subtitle">Cada foto é um momento especial juntos</p>
         </header>
@@ -20,9 +26,14 @@
             </div>
             <h2 class="love-message">Te adoro</h2>
             <p class="love-description">Cada dia ao seu lado é um presente que agradeço ao universo</p>
+            <div class="love-quotes">
+                <p class="quote">"O amor é a poesia dos sentidos"</p>
+                <p class="quote-author">- Honoré de Balzac</p>
+            </div>
         </div>
 
         <div class="gallery-container">
+            <h3 class="gallery-title">Nossa Galeria de Momentos</h3>
             <div class="gallery" id="photoGallery">
                 <!-- As fotos serão adicionadas aqui dinamicamente -->
             </div>
@@ -36,12 +47,22 @@
                     <div class="upload-icon">📸</div>
                     <p>Clique aqui para adicionar fotos</p>
                     <p class="upload-hint">ou arraste as fotos para cá</p>
+                    <div class="upload-features">
+                        <span class="feature">✨ Suporte a JPG, PNG, GIF</span>
+                        <span class="feature">💾 Salvo automaticamente</span>
+                        <span class="feature">📱 Funciona no celular</span>
+                    </div>
                 </div>
             </div>
         </div>
 
         <footer class="footer">
             <p>Feito com ❤️ para nós dois</p>
+            <div class="footer-hearts">
+                <span>💕</span>
+                <span>💖</span>
+                <span>💝</span>
+            </div>
         </footer>
     </div>
 
@@ -50,6 +71,10 @@
         <div class="modal-content">
             <span class="close-btn" id="closeModal">&times;</span>
             <img id="modalImage" src="" alt="Foto">
+            <div class="modal-info">
+                <h4 id="modalTitle"></h4>
+                <p id="modalDate"></p>
+            </div>
             <div class="modal-nav">
                 <button class="nav-btn" id="prevBtn">‹</button>
                 <button class="nav-btn" id="nextBtn">›</button>
