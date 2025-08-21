@@ -112,7 +112,7 @@ function addPhotos(files) {
     fileInput.value = '';
 }
 
-// Adicionar fotos especiais (você pode modificar aqui)
+// Adicionar fotos especiais com frases românticas de poetas
 function addSpecialPhotos() {
     // Se já existem fotos salvas, não adicionar as especiais novamente
     if (photos.length > 0) return;
@@ -120,23 +120,142 @@ function addSpecialPhotos() {
     const specialPhotos = [
         {
             id: 'special1',
-            src: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPgo8dGV4dCB4PSIyMDAiIHk9IjE2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pyFPC90ZXh0Pgo8dGV4dCB4PSIyMDAiIHk9IjE5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pyFPC90ZXh0Pgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmY2YjZiO3N0b3Atb3BhY2l0eToxIiAvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNlZTVhMjQ7c3RvcC1vcGFjaXR5OjEiIC8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+',
-            name: '🌹 Nosso Beijo Especial 🌹',
-            date: 'Momentos inesquecíveis',
+            src: 'https://drive.google.com/uc?export=view&id=1cBMkvXG1Rzy1P6DAhQ0sq62Ma8FvmQAi',
+            name: '🌹 "O amor é a poesia dos sentidos" 🌹',
+            date: '- Honoré de Balzac',
             isSpecial: true
         },
         {
             id: 'special2',
-            src: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPgo8dGV4dCB4PSIxMDAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pyFPC90ZXh0Pgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNjY3ZWVhO3N0b3Atb3BhY2l0eToxIiAvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM3NjRiYTI7c3RvcC1vcGFjaXR5OjEiIC8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+',
-            name: 'Momentos especiais juntos',
-            date: 'Cada dia é uma nova aventura',
+            src: 'https://drive.google.com/uc?export=view&id=13SAsfDK3P9BEus5_SrzrTAFC5rVqfNaR',
+            name: '"Amar é encontrar a felicidade na felicidade do outro"',
+            date: '- Gottfried Leibniz',
             isSpecial: false
         },
         {
             id: 'special3',
-            src: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPgo8dGV4dCB4PSIxMDAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4pyFPC90ZXh0Pgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmY2YjZiO3N0b3Atb3BhY2l0eToxIiAvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNlZTVhMjQ7c3RvcC1vcGFjaXR5OjEiIC8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+',
-            name: 'Nossa história de amor',
-            date: 'Cada foto conta nossa história',
+            src: 'https://drive.google.com/uc?export=view&id=1I5L_iwlNJY-vOCQmBXI97Yrlq61DNhMx',
+            name: '"O amor é a força mais sutil do mundo"',
+            date: '- Lao Tzu',
+            isSpecial: false
+        },
+        {
+            id: 'special4',
+            src: 'https://drive.google.com/uc?export=view&id=168xwyuVoJ3DW045B9-Y8Mi38CaLb6NWb',
+            name: '"Amar é acreditar, esperar e conhecer"',
+            date: '- Paulo Coelho',
+            isSpecial: false
+        },
+        {
+            id: 'special5',
+            src: 'https://drive.google.com/uc?export=view&id=1Ywg2VQY7kVZrzEnxZIoW9x4wSlBqhBo-',
+            name: '"O amor é a única resposta para a pergunta do sentido da vida"',
+            date: '- Viktor Frankl',
+            isSpecial: false
+        },
+        {
+            id: 'special6',
+            src: 'https://drive.google.com/uc?export=view&id=1qJi-KeqmrLmj9ftuSGiL9Hisagzhn8SH',
+            name: '"Amar é encontrar a beleza em tudo"',
+            date: '- Khalil Gibran',
+            isSpecial: false
+        },
+        {
+            id: 'special7',
+            src: 'https://drive.google.com/uc?export=view&id=1kvbQuH5bRHuSf0FmjDyqsqPijHr8_osu',
+            name: '"O amor é a música da vida"',
+            date: '- Victor Hugo',
+            isSpecial: false
+        },
+        {
+            id: 'special8',
+            src: 'https://drive.google.com/uc?export=view&id=1NpKuB5xm-bu8iE9Ani9p99l6UQxHNqiP',
+            name: '"Amar é viver duas vidas em uma"',
+            date: '- William Shakespeare',
+            isSpecial: false
+        },
+        {
+            id: 'special9',
+            src: 'https://drive.google.com/uc?export=view&id=1J3Xxy1XqFf7D6XO2T29-q1DAj7UEkW0J',
+            name: '"O amor é a luz que ilumina o caminho"',
+            date: '- Rumi',
+            isSpecial: false
+        },
+        {
+            id: 'special10',
+            src: 'https://drive.google.com/uc?export=view&id=1P_YR5GrFvJaLSg56QqIxEc6u-FuJR9eV',
+            name: '"Amar é dar sem esperar receber"',
+            date: '- Madre Teresa',
+            isSpecial: false
+        },
+        {
+            id: 'special11',
+            src: 'https://drive.google.com/uc?export=view&id=1yyZmsh7wigmkkFpEx6aLSvzqd4QubK-L',
+            name: '"O amor é a essência da existência"',
+            date: '- Rabindranath Tagore',
+            isSpecial: false
+        },
+        {
+            id: 'special12',
+            src: 'https://drive.google.com/uc?export=view&id=1kTjK8PLkEFNTEBD9FomrnSz5ZGX7otH4',
+            name: '"Amar é encontrar o paraíso na terra"',
+            date: '- John Milton',
+            isSpecial: false
+        },
+        {
+            id: 'special13',
+            src: 'https://drive.google.com/uc?export=view&id=1ni2QplB2xDCy-l6NQYsAhAQ1tXimK_DV',
+            name: '"O amor é a força que move o universo"',
+            date: '- Dante Alighieri',
+            isSpecial: false
+        },
+        {
+            id: 'special14',
+            src: 'https://drive.google.com/uc?export=view&id=1AdgYTYnnwMbPd_Iw621ju1k-np4LXeoM',
+            name: '"Amar é a maior aventura da vida"',
+            date: '- Antoine de Saint-Exupéry',
+            isSpecial: false
+        },
+        {
+            id: 'special15',
+            src: 'https://drive.google.com/uc?export=view&id=1qj7btA72RtSXniQnfTBDCuSnWy_wPGBt',
+            name: '"O amor é a resposta para todas as perguntas"',
+            date: '- Hermann Hesse',
+            isSpecial: false
+        },
+        {
+            id: 'special16',
+            src: 'https://drive.google.com/uc?export=view&id=1bCeVWZedTOAjrMKRgffWLAxCV6KwpIvi',
+            name: '"Amar é encontrar a paz na tempestade"',
+            date: '- Emily Dickinson',
+            isSpecial: false
+        },
+        {
+            id: 'special17',
+            src: 'https://drive.google.com/uc?export=view&id=17o1k98WBK2GfWFHYw3FRx-LG9kFRK54U',
+            name: '"O amor é a arte de viver juntos"',
+            date: '- Voltaire',
+            isSpecial: false
+        },
+        {
+            id: 'special18',
+            src: 'https://drive.google.com/uc?export=view&id=1EKzAdgIiF0pmxImSFl-vQrdssMMEEowO',
+            name: '"Amar é encontrar a eternidade no momento"',
+            date: '- William Blake',
+            isSpecial: false
+        },
+        {
+            id: 'special19',
+            src: 'https://drive.google.com/uc?export=view&id=17ZrfADNzLqIynvv7NZxyb2_9mRv0qoVg',
+            name: '"O amor é a magia que transforma tudo"',
+            date: '- Oscar Wilde',
+            isSpecial: false
+        },
+        {
+            id: 'special20',
+            src: 'https://drive.google.com/uc?export=view&id=1hspffQdS3E_Pks2UKwkFsVEcYnPpLAnU',
+            name: '"Amar é encontrar o céu na terra"',
+            date: '- Elizabeth Barrett Browning',
             isSpecial: false
         }
     ];
