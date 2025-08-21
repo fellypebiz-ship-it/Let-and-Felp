@@ -3,83 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Galeria de Amor ❤️</title>
+    <title>Piadas Sem Graça 🎭</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
+        <!-- Header com efeito Valorant -->
         <header class="header">
-            <div class="floating-hearts">
-                <div class="heart-float">❤️</div>
-                <div class="heart-float">💕</div>
-                <div class="heart-float">💖</div>
-                <div class="heart-float">💝</div>
+            <div class="header-bg"></div>
+            <div class="header-content">
+                <h1 class="title">PIADAS SEM GRAÇA</h1>
+                <p class="subtitle">Piadas para alegrar os dias da minha princesa ❤️</p>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="jokesRevealed">0</span>
+                        <span class="stat-label">Piadas Reveladas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="totalJokes">100</span>
+                        <span class="stat-label">Total de Piadas</span>
+                    </div>
+                </div>
             </div>
-            <h1 class="title">Nossa História de Amor</h1>
-            <p class="subtitle">Cada foto é um momento especial juntos</p>
         </header>
 
-        <div class="message-section">
-            <div class="heart-container">
-                <div class="heart"></div>
+        <!-- Grid de números -->
+        <main class="main-content">
+            <div class="grid-container">
+                <div class="jokes-grid" id="jokesGrid">
+                    <!-- Os números serão gerados dinamicamente -->
+                </div>
             </div>
-            <h2 class="love-message">Te adoro</h2>
-            <p class="love-description">Cada dia ao seu lado é um presente que agradeço ao universo</p>
-            <div class="love-quotes">
-                <p class="quote">"O amor é a poesia dos sentidos"</p>
-                <p class="quote-author">- Honoré de Balzac</p>
-            </div>
-        </div>
+        </main>
 
-        <div class="gallery-container">
-            <h3 class="gallery-title">Nossa Galeria de Momentos</h3>
-            <div class="gallery" id="photoGallery">
-                <!-- As fotos serão adicionadas aqui dinamicamente -->
-            </div>
-        </div>
-
-        <div class="upload-section">
-            <h3>Adicionar Nossas Fotos</h3>
-            <div class="upload-area" id="uploadArea">
-                <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
-                <div class="upload-content">
-                    <div class="upload-icon">📸</div>
-                    <p>Clique aqui para adicionar fotos</p>
-                    <p class="upload-hint">ou arraste as fotos para cá</p>
-                    <div class="upload-features">
-                        <span class="feature">✨ Suporte a JPG, PNG, GIF</span>
-                        <span class="feature">💾 Salvo automaticamente</span>
-                        <span class="feature">📱 Funciona no celular</span>
+        <!-- Modal para mostrar a piada -->
+        <div class="modal" id="jokeModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Piada #<span id="jokeNumber"></span></h2>
+                    <button class="close-btn" id="closeModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="joke-content" id="jokeContent">
+                        <!-- A piada será inserida aqui -->
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="nextJoke">Próxima Piada</button>
+                    <button class="btn btn-secondary" id="shareJoke">Compartilhar</button>
                 </div>
             </div>
         </div>
 
+        <!-- Footer -->
         <footer class="footer">
-            <p>Feito com ❤️ para nós dois</p>
-            <div class="footer-hearts">
-                <span>💕</span>
-                <span>💖</span>
-                <span>💝</span>
-            </div>
+            <p>Para Let eterna zecapaugordinho</p>
         </footer>
-    </div>
-
-    <!-- Modal para visualizar as fotos -->
-    <div class="modal" id="photoModal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModal">&times;</span>
-            <img id="modalImage" src="" alt="Foto">
-            <div class="modal-info">
-                <h4 id="modalTitle"></h4>
-                <p id="modalDate"></p>
-            </div>
-            <div class="modal-nav">
-                <button class="nav-btn" id="prevBtn">‹</button>
-                <button class="nav-btn" id="nextBtn">›</button>
-            </div>
-        </div>
     </div>
 
     <script src="script.js"></script>
