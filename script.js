@@ -120,140 +120,140 @@ function addSpecialPhotos() {
     const specialPhotos = [
         {
             id: 'special1',
-            src: 'https://drive.google.com/uc?export=view&id=1cBMkvXG1Rzy1P6DAhQ0sq62Ma8FvmQAi',
+            src: 'https://drive.google.com/file/d/1cBMkvXG1Rzy1P6DAhQ0sq62Ma8FvmQAi/preview',
             name: '🌹 "O amor é a poesia dos sentidos" 🌹',
             date: '- Honoré de Balzac',
             isSpecial: true
         },
         {
             id: 'special2',
-            src: 'https://drive.google.com/uc?export=view&id=13SAsfDK3P9BEus5_SrzrTAFC5rVqfNaR',
+            src: 'https://drive.google.com/file/d/13SAsfDK3P9BEus5_SrzrTAFC5rVqfNaR/preview',
             name: '"Amar é encontrar a felicidade na felicidade do outro"',
             date: '- Gottfried Leibniz',
             isSpecial: false
         },
         {
             id: 'special3',
-            src: 'https://drive.google.com/uc?export=view&id=1I5L_iwlNJY-vOCQmBXI97Yrlq61DNhMx',
+            src: 'https://drive.google.com/file/d/1I5L_iwlNJY-vOCQmBXI97Yrlq61DNhMx/preview',
             name: '"O amor é a força mais sutil do mundo"',
             date: '- Lao Tzu',
             isSpecial: false
         },
         {
             id: 'special4',
-            src: 'https://drive.google.com/uc?export=view&id=168xwyuVoJ3DW045B9-Y8Mi38CaLb6NWb',
+            src: 'https://drive.google.com/file/d/168xwyuVoJ3DW045B9-Y8Mi38CaLb6NWb/preview',
             name: '"Amar é acreditar, esperar e conhecer"',
             date: '- Paulo Coelho',
             isSpecial: false
         },
         {
             id: 'special5',
-            src: 'https://drive.google.com/uc?export=view&id=1Ywg2VQY7kVZrzEnxZIoW9x4wSlBqhBo-',
+            src: 'https://drive.google.com/file/d/1Ywg2VQY7kVZrzEnxZIoW9x4wSlBqhBo-/preview',
             name: '"O amor é a única resposta para a pergunta do sentido da vida"',
             date: '- Viktor Frankl',
             isSpecial: false
         },
         {
             id: 'special6',
-            src: 'https://drive.google.com/uc?export=view&id=1qJi-KeqmrLmj9ftuSGiL9Hisagzhn8SH',
+            src: 'https://drive.google.com/file/d/1qJi-KeqmrLmj9ftuSGiL9Hisagzhn8SH/preview',
             name: '"Amar é encontrar a beleza em tudo"',
             date: '- Khalil Gibran',
             isSpecial: false
         },
         {
             id: 'special7',
-            src: 'https://drive.google.com/uc?export=view&id=1kvbQuH5bRHuSf0FmjDyqsqPijHr8_osu',
+            src: 'https://drive.google.com/file/d/1kvbQuH5bRHuSf0FmjDyqsqPijHr8_osu/preview',
             name: '"O amor é a música da vida"',
             date: '- Victor Hugo',
             isSpecial: false
         },
         {
             id: 'special8',
-            src: 'https://drive.google.com/uc?export=view&id=1NpKuB5xm-bu8iE9Ani9p99l6UQxHNqiP',
+            src: 'https://drive.google.com/file/d/1NpKuB5xm-bu8iE9Ani9p99l6UQxHNqiP/preview',
             name: '"Amar é viver duas vidas em uma"',
             date: '- William Shakespeare',
             isSpecial: false
         },
         {
             id: 'special9',
-            src: 'https://drive.google.com/uc?export=view&id=1J3Xxy1XqFf7D6XO2T29-q1DAj7UEkW0J',
+            src: 'https://drive.google.com/file/d/1J3Xxy1XqFf7D6XO2T29-q1DAj7UEkW0J/preview',
             name: '"O amor é a luz que ilumina o caminho"',
             date: '- Rumi',
             isSpecial: false
         },
         {
             id: 'special10',
-            src: 'https://drive.google.com/uc?export=view&id=1P_YR5GrFvJaLSg56QqIxEc6u-FuJR9eV',
+            src: 'https://drive.google.com/file/d/1P_YR5GrFvJaLSg56QqIxEc6u-FuJR9eV/preview',
             name: '"Amar é dar sem esperar receber"',
             date: '- Madre Teresa',
             isSpecial: false
         },
         {
             id: 'special11',
-            src: 'https://drive.google.com/uc?export=view&id=1yyZmsh7wigmkkFpEx6aLSvzqd4QubK-L',
+            src: 'https://drive.google.com/file/d/1yyZmsh7wigmkkFpEx6aLSvzqd4QubK-L/preview',
             name: '"O amor é a essência da existência"',
             date: '- Rabindranath Tagore',
             isSpecial: false
         },
         {
             id: 'special12',
-            src: 'https://drive.google.com/uc?export=view&id=1kTjK8PLkEFNTEBD9FomrnSz5ZGX7otH4',
+            src: 'https://drive.google.com/file/d/1kTjK8PLkEFNTEBD9FomrnSz5ZGX7otH4/preview',
             name: '"Amar é encontrar o paraíso na terra"',
             date: '- John Milton',
             isSpecial: false
         },
         {
             id: 'special13',
-            src: 'https://drive.google.com/uc?export=view&id=1ni2QplB2xDCy-l6NQYsAhAQ1tXimK_DV',
+            src: 'https://drive.google.com/file/d/1ni2QplB2xDCy-l6NQYsAhAQ1tXimK_DV/preview',
             name: '"O amor é a força que move o universo"',
             date: '- Dante Alighieri',
             isSpecial: false
         },
         {
             id: 'special14',
-            src: 'https://drive.google.com/uc?export=view&id=1AdgYTYnnwMbPd_Iw621ju1k-np4LXeoM',
+            src: 'https://drive.google.com/file/d/1AdgYTYnnwMbPd_Iw621ju1k-np4LXeoM/preview',
             name: '"Amar é a maior aventura da vida"',
             date: '- Antoine de Saint-Exupéry',
             isSpecial: false
         },
         {
             id: 'special15',
-            src: 'https://drive.google.com/uc?export=view&id=1qj7btA72RtSXniQnfTBDCuSnWy_wPGBt',
+            src: 'https://drive.google.com/file/d/1qj7btA72RtSXniQnfTBDCuSnWy_wPGBt/preview',
             name: '"O amor é a resposta para todas as perguntas"',
             date: '- Hermann Hesse',
             isSpecial: false
         },
         {
             id: 'special16',
-            src: 'https://drive.google.com/uc?export=view&id=1bCeVWZedTOAjrMKRgffWLAxCV6KwpIvi',
+            src: 'https://drive.google.com/file/d/1bCeVWZedTOAjrMKRgffWLAxCV6KwpIvi/preview',
             name: '"Amar é encontrar a paz na tempestade"',
             date: '- Emily Dickinson',
             isSpecial: false
         },
         {
             id: 'special17',
-            src: 'https://drive.google.com/uc?export=view&id=17o1k98WBK2GfWFHYw3FRx-LG9kFRK54U',
+            src: 'https://drive.google.com/file/d/17o1k98WBK2GfWFHYw3FRx-LG9kFRK54U/preview',
             name: '"O amor é a arte de viver juntos"',
             date: '- Voltaire',
             isSpecial: false
         },
         {
             id: 'special18',
-            src: 'https://drive.google.com/uc?export=view&id=1EKzAdgIiF0pmxImSFl-vQrdssMMEEowO',
+            src: 'https://drive.google.com/file/d/1EKzAdgIiF0pmxImSFl-vQrdssMMEEowO/preview',
             name: '"Amar é encontrar a eternidade no momento"',
             date: '- William Blake',
             isSpecial: false
         },
         {
             id: 'special19',
-            src: 'https://drive.google.com/uc?export=view&id=17ZrfADNzLqIynvv7NZxyb2_9mRv0qoVg',
+            src: 'https://drive.google.com/file/d/17ZrfADNzLqIynvv7NZxyb2_9mRv0qoVg/preview',
             name: '"O amor é a magia que transforma tudo"',
             date: '- Oscar Wilde',
             isSpecial: false
         },
         {
             id: 'special20',
-            src: 'https://drive.google.com/uc?export=view&id=1hspffQdS3E_Pks2UKwkFsVEcYnPpLAnU',
+            src: 'https://drive.google.com/file/d/1hspffQdS3E_Pks2UKwkFsVEcYnPpLAnU/preview',
             name: '"Amar é encontrar o céu na terra"',
             date: '- Elizabeth Barrett Browning',
             isSpecial: false
@@ -280,7 +280,7 @@ function renderPhoto(photo) {
     }
     
     photoElement.innerHTML = `
-        <img src="${photo.src}" alt="${photo.name}" loading="lazy">
+        <img src="${photo.src}" alt="${photo.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.innerHTML='<div style=\'text-align:center; padding:20px; color:#666;\'><div style=\'font-size:3rem; margin-bottom:10px;\'>📸</div><div>Foto não disponível</div><div style=\'font-size:0.9rem; margin-top:10px; color:#999;\'>Clique para adicionar suas fotos</div></div>'">
         <div class="photo-overlay">
             <div class="photo-title">${photo.name}</div>
             <div class="photo-date">${photo.date}</div>
